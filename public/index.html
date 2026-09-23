@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project ni Sir, — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <span class="logo">KIETH personal info,</span>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-photo">
+      <img src="images/profile.jpg" alt="Your Name"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="photo-fallback">Add<br>images/profile.jpg</div>
+    </div>
+    <div class="hero-text">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Kieth</h1>
+      <p class="intro">
+        Hi, I'm Kieth and you can call me kit, this is my simple and simpliest website for project purpossssses ba.
+      </p>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <section id="about" class="section">
+    <div class="wrap">
+      <h2>About Me</h2>
+      <p>
+        I am just a beginner at coding but i have knowledge at minecraft scripting. Creating mods and plugins.
+      </p>
+    </div>
+  </section>
+
+  <section id="hobbies" class="section alt">
+    <div class="wrap">
+      <h2>Hobbies</h2>
+      <ul class="chip-list">
+        <li>Drawing</li>
+        <li>Vibe Coding</li>
+        <li>Playing Online games</li>
+        <li>Listening to music</li>
+        <li>...</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li><span class="skill-name">Coding</span><span class="skill-bar"><span style="width:80%"></span></span></li>
+        <li><span class="skill-name">Drawing</span><span class="skill-bar"><span style="width:70%"></span></span></li>
+        <li><span class="skill-name">Logical thinking skills</span><span class="skill-bar"><span style="width:65%"></span></span></li>
+        <li><span class="skill-name">Communication</span><span class="skill-bar"><span style="width:60%"></span></span></li>
+        <li><span class="skill-name">Laser eyes</span><span class="skill-bar"><span style="width:55%"></span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education" class="section alt">
+    <div class="wrap">
+      <h2>Education</h2>
+      <table class="edu-table">
+        <thead>
+          <tr><th>Year</th><th>School</th><th>Program / Level</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>20XX–20XX</td><td>rosario</td><td>Elementary</td></tr>
+          <tr><td>20XX–20XX</td><td>malasarte</td><td>Junior/Senior High</td></tr>
+          <tr><td>2026–present</td><td>College/BOHOL ISLAND STATE UNIVERSITY</td><td>BSIT / 4</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- <section id="projects" class="section">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <p class="section-note">Challenge section — add at least 3 projects you've worked on.</p>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Project one</h3>
+          <p>Short description of what it does and what you used to build it.</p>
+        </article>
+        <article class="project-card">
+          <h3>Project two</h3>
+          <p>Short description of what it does and what you used to build it.</p>
+        </article>
+        <article class="project-card">
+          <h3>Project three</h3>
+          <p>Short description of what it does and what you used to build it.</p>
+        </article>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="contact" class="section alt">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <form class="contact-form" onsubmit="alert('This form is a UI demo — connect it to Laravel or a mail service to actually send messages.'); return false;">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> KIT</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
